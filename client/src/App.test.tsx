@@ -98,7 +98,7 @@ describe('Main Tests', () => {
     const remainingTextDelete = currentRemainingDelete.textContent; // "Remaining: $1000"
     if (remainingTextDelete !== null) {
       const remainingNumber = parseFloat(remainingTextDelete.replace(/[^\d.-]/g, ''));
-      expect(remainingNumber).toBe(1000);
+      expect(remainingNumber).toBe(1001);
     } else {
       throw new Error("remainingTextDelete is null");
     }
